@@ -1,24 +1,27 @@
 //Diana Espinal Marin
-void potencia(float (*m1)[5], int p, float (*r)[5])
-{
-  cout<<"\nElementos de la matriz1 original : \n";
-for(int i=0;i<5;i++){
-	for(int j=0;j<5;j++){
-	      cout<<m1[i][j]<<" ";
+//A MI ME TOCO SACAR LA POTENCIA DE LAS MATRICES
+	
+	for (int a=0;a<2;a++)
+    {
+	
+	for (int b=0;b<2;b++)
+         { 
+	      matrizresultado[a][b]=0;
+		  matrizresultado[a][b]=matrizresultado[a][b]+matriz1[a][b]*matriz1[a][b];
+         }
+    }
+    
+	cout<<"\nPARA LA POTENCIA DE LA MATRIZ 1, ES:\n";
+	
+	for(int a=0;a<2;a++)
+	{
+		for(int b=0;b<2;b++)
+		{
+			cout<<matrizresultado[a][b]<<" ";
+		}
+		cout<<"\n";
 	}
-cout<<"\n";
-	}
-
-cout<<"Calcular la potencia p de una ";
-for(int i=0; i<5; ++i)
-        for(int j=0; j<5; ++j)
-            r[i][j] = 0;
-            
-            for(int i=0; i<5; ++i)
-        for(int j=0; j<5; ++j)
-            for(int z=0; z<5; ++z)
-                r[i][j] += m1[i][z] * m1[z][j];
-
-
-
-}
+	
+		break;
+		
+	case 4:
