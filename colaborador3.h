@@ -1,5 +1,7 @@
 //Diana Espinal Marin
-void potencia(float (*m1)[5], int p, float (*r)[5])
+//A MI ME TOCO SACAR LA POTENCIA DE LAS MATRICES
+	
+	void potencia(float (*m1)[5], int p, float (*r)[5])
 {
   cout<<"\nElementos de la matriz1 original : \n";
 for(int i=0;i<5;i++){
